@@ -65,7 +65,7 @@ const Books = () => {
         gap: 2,
         mb: 4,
         p: 4,
-        width: 400
+        width: {xs: '-webkit-fill-available', md: 400}
       }}>
         <Typography fontWeight={'bold'} variant={"h4"}>Add book</Typography>
         <TextField

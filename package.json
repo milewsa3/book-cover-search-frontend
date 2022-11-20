@@ -2,7 +2,7 @@
   "name": "book-cover-search-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://milewsa3.github.io",
+  "homepage": "https://milewsa3.github.io/book-cover-search-frontend",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
