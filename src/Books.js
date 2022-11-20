@@ -29,6 +29,7 @@ const Books = () => {
     mutationFn: (formData) => BookService.createBook(formData),
     onSuccess: () => {
       booksMutation.mutate(selectedTags)
+      setBook(initBook)
     }
   })
 
