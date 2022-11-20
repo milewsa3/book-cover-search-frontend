@@ -1,10 +1,8 @@
-import React, {useEffect, useState} from 'react';
-import {Paper, Tooltip, Typography} from "@mui/material";
-import {useTheme} from "@emotion/react";
+import React from 'react';
+import {Paper, Tooltip, Typography, useTheme} from "@mui/material";
 
 const BookCard = ({book, sx = []}) => {
   const theme = useTheme()
-  const [bookCoverImage, setBookCoverImage] = useState('')
 
   return (
     <Paper elevation={4} sx={[
@@ -23,7 +21,7 @@ const BookCard = ({book, sx = []}) => {
       </Tooltip>
       <Typography color={'text.secondary'} variant={'body2'} noWrap>{book.author}</Typography>
       <img
-        src={bookCoverImage}
+        src={`data:image/png;base64,${book.cover}`}
         alt={""}
         style={{
           marginTop: theme.spacing(1),

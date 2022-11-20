@@ -14,7 +14,7 @@ const PageBox = ({sx = [], children}) => {
           alignItems: "flex-start",
         },
         (theme) => ({
-          bgcolor: theme.palette.mode === "dark" ? "#101010" : "#e0d7d2",
+          bgcolor: theme.palette.mode === "dark" ? "#101010" : "#ffffff",
         }),
         ...(Array.isArray(sx) ? sx : [sx]),
       ]}
