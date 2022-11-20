@@ -33,6 +33,7 @@ const BookCard = ({book, sx = []}) => {
           boxShadow: theme.shadows[2]
         }}
         className={"bookCover"}/>
+      <Typography color={'text.secondary'} variant={'body2'} noWrap>{book.tags.join(", ")}</Typography>
     </Paper>
   );
 };
